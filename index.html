@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korikath Knowledge</title>
+	
+	<script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Apply the primary font to the whole site */
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #001A49;
+        }
+        
+        /* Utility class for the secondary font */
+        .font-pacifico {
+            font-family: 'Pacifico', cursive;
+        }
+
+        /* Add custom brand colors to Tailwind */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-navy': '#001A49',
+                        'brand-yellow': '#FFDD50',
+                        'brand-blue': '#5368E0',
+                        'brand-teal': '#2BC193',
+                        'brand-coral': '#E66D50',
+                        'brand-cream': '#F4E8D0',
+                    }
+                }
+            }
+        }
+
+        /* Smooth transitions */
+        * {
+            transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+        }
+    </style>
+</head>
+<body class="bg-white antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md shadow-sm">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="#home" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Korikath Knowledge</span>
+                    <!-- TODO: Replace src with your Primary Logo URL - Square format -->
+                    <img 
+                        class="h-12 w-12 object-contain" 
+                        src="https://placehold.co/200x200/001A49/FFFFFF?text=Logo" 
+                        alt="Korikath Knowledge Logo"
+                        onerror="this.src='https://placehold.co/200x200/001A49/FFFFFF?text=Logo'">
+                </a>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="#home" class="text-sm font-semibold leading-6 text-brand-navy hover:text-brand-teal">Home</a>
+                <a href="#about" class="text-sm font-semibold leading-6 text-brand-navy hover:text-brand-teal">About Us</a>
+                <a href="#projects" class="text-sm font-semibold leading-6 text-brand-navy hover:text-brand-teal">Projects</a>
+                <a href="#community" class="text-sm font-semibold leading-6 text-brand-navy hover:text-brand-teal">Community</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#contact" class="rounded-full bg-brand-yellow px-5 py-2.5 text-sm font-semibold text-brand-navy shadow-md hover:shadow-lg hover:bg-brand-yellow/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-navy">
+                    Get Involved
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-gradient-to-br from-brand-yellow/20 to-white px-6 py-24 sm:py-32 lg:px-8">
+            <div class="mx-auto max-w-4xl text-center">
+                <p class="text-base font-semibold leading-7 text-brand-teal">Korikath Knowledge</p>
+                <h1 class="mt-2 text-4xl font-bold tracking-tight text-brand-navy sm:text-6xl">
+                    An Open Knowledge organization for real-world problems.
+                </h1>
+                <p class="mt-10 text-2xl leading-8 text-brand-navy">
+                    "Open knowledge to change lives, 
+                    <span class="font-pacifico text-brand-teal">beyond pages.</span>"
+                </p>
+                <div class="mt-12 flex items-center justify-center">
+                    <a href="#" class="rounded-full bg-brand-yellow px-8 py-4 text-lg font-semibold text-brand-navy shadow-lg hover:shadow-xl hover:bg-brand-yellow/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-yellow font-pacifico">
+                            Our Projects
+                        </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="overflow-hidden bg-brand-cream py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-2 lg:items-start">
+                    <div class="pt-6">
+                        <h2 class="text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl">Who We Are</h2>
+                        <p class="mt-6 text-xl leading-8 text-gray-700">
+                            Korikath Knowledge is dedicated to utilizing the principles of open knowledge to solve real-world problems and aid human development. 
+                        </p>
+                        <p class="mt-8 text-2xl font-semibold leading-9 text-brand-navy">
+                            We prioritize <span class="font-pacifico text-brand-teal">human and community</span> over content.
+                        </p>
+                        <p class="mt-6 text-lg leading-7 text-gray-700">
+                            Our mission is to create a tangible impact, moving beyond theoretical knowledge to foster practical solutions and support strong, informed communities.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center rounded-lg bg-gray-200">
+                        <img 
+                            src="https://placehold.co/600x450/2BC193/FFFFFF?text=Our+Community" 
+                            alt="A placeholder image representing the Korikath community or work" 
+                            class="w-full h-auto rounded-lg object-cover shadow-xl"
+                            onerror="this.src='https://placehold.co/600x450/2BC193/FFFFFF?text=Our+Community'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-gradient-to-br from-brand-yellow/30 via-brand-yellow/10 to-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl lg:text-center">
+                    <h2 class="text-base font-semibold leading-7 text-brand-teal">Our Work</h2>
+                    <p class="mt-2 text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl">
+                        Open Knowledge Projects
+                    </p>
+                    <p class="mt-6 text-lg leading-8 text-gray-700">
+                        We support several key projects, each designed to tackle different challenges using open principles.
+                    </p>
+                </div>
+                <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                    
+                    <!-- Project Korikath (Flagship) -->
+                    <article class="flex flex-col items-start justify-between rounded-lg border-2 border-brand-yellow bg-white p-6 shadow-lg hover:shadow-2xl hover:border-brand-yellow/80">
+                        <div class="relative w-full">
+                            <!-- TODO: Replace src with Project Korikath logo URL -->
+                            <img src="https://placehold.co/400x250/001A49/FFFFFF?text=Project+Korikath+Logo" 
+                                 alt="Project Korikath Logo" 
+                                 class="w-full h-64 rounded-md bg-brand-navy object-contain p-8"
+                                 onerror="this.src='https://placehold.co/400x250/001A49/FFFFFF?text=Project+Korikath+Logo'">
+                            <div class="absolute top-2 right-2 rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold text-brand-navy shadow-md">
+                                FLAGSHIP
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold leading-6 text-brand-navy">
+                                Project Korikath
+                            </h3>
+                            <p class="mt-3 text-sm leading-6 text-gray-600">Our flagship project, driving core initiatives in open knowledge and community development.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project Shoili -->
+                    <article class="flex flex-col items-start justify-between rounded-lg border border-brand-navy/20 bg-white p-6 shadow-lg hover:shadow-2xl hover:border-brand-teal">
+                        <div class="w-full">
+                            <!-- TODO: Replace src with Project Shoili logo URL -->
+                            <img src="https://placehold.co/400x250/5368E0/FFFFFF?text=Project+Shoili+Logo" 
+                                 alt="Project Shoili Logo" 
+                                 class="w-full h-64 rounded-md bg-brand-blue object-contain p-8"
+                                 onerror="this.src='https://placehold.co/400x250/5368E0/FFFFFF?text=Project+Shoili+Logo'">
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold leading-6 text-brand-navy">
+                                Project Shoili
+                            </h3>
+                            <p class="mt-3 text-sm leading-6 text-gray-600">An initiative focused on [add brief project description here].</p>
+                        </div>
+                    </article>
+
+                    <!-- Project Koushol -->
+                    <article class="flex flex-col items-start justify-between rounded-lg border border-brand-navy/20 bg-white p-6 shadow-lg hover:shadow-2xl hover:border-brand-teal">
+                        <div class="w-full">
+                            <!-- TODO: Replace src with Project Koushol logo URL -->
+                            <img src="https://placehold.co/400x250/2BC193/FFFFFF?text=Project+Koushol+Logo" 
+                                 alt="Project Koushol Logo" 
+                                 class="w-full h-64 rounded-md bg-brand-teal object-contain p-8"
+                                 onerror="this.src='https://placehold.co/400x250/2BC193/FFFFFF?text=Project+Koushol+Logo'">
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold leading-6 text-brand-navy">
+                                Project Koushol
+                            </h3>
+                            <p class="mt-3 text-sm leading-6 text-gray-600">An initiative focused on [add brief project description here].</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Project Mowrossih -->
+                    <article class="flex flex-col items-start justify-between rounded-lg border border-brand-navy/20 bg-white p-6 shadow-lg hover:shadow-2xl hover:border-brand-teal">
+                        <div class="w-full">
+                            <!-- TODO: Replace src with Project Mowrossih logo URL -->
+                            <img src="https://placehold.co/400x250/E66D50/FFFFFF?text=Project+Mowrossih+Logo" 
+                                 alt="Project Mowrossih Logo" 
+                                 class="w-full h-64 rounded-md bg-brand-coral object-contain p-8"
+                                 onerror="this.src='https://placehold.co/400x250/E66D50/FFFFFF?text=Project+Mowrossih+Logo'">
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold leading-6 text-brand-navy">
+                                Project Mowrossih
+                            </h3>
+                            <p class="mt-3 text-sm leading-6 text-gray-600">An initiative focused on [add brief project description here].</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Project Progga -->
+                    <article class="flex flex-col items-start justify-between rounded-lg border border-brand-navy/20 bg-white p-6 shadow-lg hover:shadow-2xl hover:border-brand-teal">
+                        <div class="w-full">
+                            <!-- TODO: Replace src with Project Progga logo URL -->
+                            <img src="https://placehold.co/400x250/FFDD50/001A49?text=Project+Progga+Logo" 
+                                 alt="Project Progga Logo" 
+                                 class="w-full h-64 rounded-md bg-brand-yellow object-contain p-8"
+                                 onerror="this.src='https://placehold.co/400x250/FFDD50/001A49?text=Project+Progga+Logo'">
+                        </div>
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold leading-6 text-brand-navy">
+                                Project Progga
+                            </h3>
+                            <p class="mt-3 text-sm leading-6 text-gray-600">An initiative focused on [add brief project description here].</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- Community Section -->
+        <section id="community" class="bg-brand-cream py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-2 lg:items-center">
+                    <div class="flex items-center justify-center rounded-lg bg-gray-200">
+                        <img 
+                            src="https://placehold.co/600x450/001A49/FFFFFF?text=Our+Teams" 
+                            alt="A placeholder image representing the Korikath clubs and teams" 
+                            class="w-full h-auto rounded-lg object-cover shadow-xl"
+                            onerror="this.src='https://placehold.co/600x450/001A49/FFFFFF?text=Our+Teams'">
+                    </div>
+                    <div class="pt-6">
+                        <h2 class="text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl">Fostering Open Knowledge Clubs</h2>
+                        <p class="mt-6 text-xl leading-8 text-gray-700">
+                            We actively support a number of extra-curricular open knowledge clubs and teams in several institutions.
+                        </p>
+                        <p class="mt-8 text-2xl font-semibold leading-9 text-brand-navy">
+                            Pioneered by <span class="font-pacifico text-brand-teal">NDEC WERT</span>, these clubs are hubs for learning, collaboration, and innovation.
+                        </p>
+                        <div class="mt-10">
+                            <a href="#contact" class="rounded-full bg-brand-yellow px-8 py-4 text-lg font-semibold text-brand-navy shadow-lg hover:shadow-xl hover:bg-brand-yellow/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-yellow font-pacifico">
+                            Start a Club
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="contact" class="bg-gradient-to-br from-brand-yellow via-brand-yellow/80 to-brand-cream">
+            <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+                <div class="relative isolate overflow-hidden bg-brand-navy/95 px-6 py-24 text-center shadow-2xl rounded-2xl sm:px-16">
+                    <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                        Want to get involved?
+                    </h2>
+                    <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-brand-cream">
+                        Join us in our mission to use open knowledge to change lives. Whether you're a student, a professional, or just passionate about open principles, we'd love to hear from you.
+                    </p>
+                    <div class="mt-10 flex items-center justify-center gap-x-6">
+                        <a href="#" class="rounded-full bg-brand-yellow px-8 py-4 text-lg font-semibold text-brand-navy shadow-lg hover:shadow-xl hover:bg-brand-yellow/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-yellow font-pacifico">
+                            Contact Us!
+                        </a>
+                    </div>
+                    
+                    <!-- Background shapes -->
+                    <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
+                        <circle cx="512" cy="512" r="512" fill="url(#gradient-contact)" fill-opacity="0.5" />
+                        <defs>
+                            <radialGradient id="gradient-contact">
+                                <stop stop-color="#FFDD50" />
+                                <stop offset="1" stop-color="#2BC193" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-cream text-brand-navy">
+        <div class="mx-auto max-w-7xl overflow-hidden px-6 py-12 lg:px-8">
+            <nav class="mt-6 -mb-1 flex flex-wrap justify-center" aria-label="Footer">
+                <div class="px-5 py-2">
+                    <a href="#about" class="text-sm leading-6 text-brand-navy/80 hover:text-brand-navy">About</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#projects" class="text-sm leading-6 text-brand-navy/80 hover:text-brand-navy">Projects</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#community" class="text-sm leading-6 text-brand-navy/80 hover:text-brand-navy">Community</a>
+                </div>
+
+            </nav>
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="#" class="text-brand-navy/70 hover:text-brand-navy">
+                    <span class="sr-only">Facebook</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-brand-navy/70 hover:text-brand-navy">
+                    <span class="sr-only">X (Twitter)</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+                <a href="#" class="text-brand-navy/70 hover:text-brand-navy">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            <p class="mt-10 text-center text-sm leading-5 text-brand-navy/70">
+                Site content available under 
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="font-semibold hover:text-brand-navy underline" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
